@@ -6,9 +6,9 @@ class GoogleDriveDataSource: NSObject, UITableViewDataSource {
   let service: GTLServiceDrive
   var driveFiles = [GTLDriveFile]()
 
-  weak var parent: ViewController?
+  weak var parent: DriveViewController?
 
-  init(user: GIDGoogleUser, parent:ViewController) {
+  init(user: GIDGoogleUser, parent:DriveViewController) {
     self.service = GTLServiceDrive()
     self.parent = parent
 
