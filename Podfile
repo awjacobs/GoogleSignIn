@@ -6,6 +6,7 @@
 target 'GoogleSignIn' do
 
 pod 'Google/SignIn'
+pod 'GoogleAPIClient/Drive'
 
 end
 
