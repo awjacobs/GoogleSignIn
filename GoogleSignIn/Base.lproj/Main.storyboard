@@ -6,10 +6,10 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Drive View Controller-->
         <scene sceneID="sh4-y6-lPf">
             <objects>
-                <viewController id="r8f-LC-HsY" customClass="ViewController" customModule="GoogleSignIn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="r8f-LC-HsY" customClass="DriveViewController" customModule="GoogleSignIn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j8P-qP-Wdl"/>
                         <viewControllerLayoutGuide type="bottom" id="JB2-4q-c2I"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rA-k2-Z4a">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rA-k2-Z4a" customClass="GoogleAccountView" customModule="GoogleSignIn" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="530" width="600" height="70"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Android" translatesAutoresizingMaskIntoConstraints="NO" id="XxU-73-ls0">
@@ -35,8 +35,8 @@
                                         </variation>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5C-YJ-MU1">
-                                        <rect key="frame" x="538" y="20" width="47" height="30"/>
-                                        <state key="normal" title="Sign In">
+                                        <rect key="frame" x="525" y="20" width="60" height="30"/>
+                                        <state key="normal" title="Sign Out">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -58,6 +58,11 @@
                                     <constraint firstItem="Wsm-PC-KHq" firstAttribute="leading" secondItem="XxU-73-ls0" secondAttribute="trailing" constant="30" id="qYP-7i-uZu"/>
                                     <constraint firstItem="L5C-YJ-MU1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wsm-PC-KHq" secondAttribute="trailing" constant="15" id="yKw-10-ZvN"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="accountImageView" destination="XxU-73-ls0" id="K7P-ku-St7"/>
+                                    <outlet property="signInOutButton" destination="L5C-YJ-MU1" id="sHG-XA-d0F"/>
+                                    <outlet property="signInStatusLabel" destination="Wsm-PC-KHq" id="2EY-gt-oi2"/>
+                                </connections>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FBj-at-ugf">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="530"/>
@@ -94,6 +99,10 @@
                             <constraint firstAttribute="trailing" secondItem="1rA-k2-Z4a" secondAttribute="trailing" id="xfW-HO-saV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accountView" destination="1rA-k2-Z4a" id="anP-9s-SHG"/>
+                        <outlet property="tableVIew" destination="FBj-at-ugf" id="bmP-fb-P2I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKv-xG-wKb" sceneMemberID="firstResponder"/>
             </objects>

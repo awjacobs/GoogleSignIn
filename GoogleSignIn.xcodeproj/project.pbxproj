@@ -12,6 +12,7 @@
 		20F176CA1CD8913800F5026A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F176C81CD8913800F5026A /* Main.storyboard */; };
 		20F176CC1CD8913800F5026A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F176CB1CD8913800F5026A /* Assets.xcassets */; };
 		20F176CF1CD8913800F5026A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F176CD1CD8913800F5026A /* LaunchScreen.storyboard */; };
+		20F176D71CD909D100F5026A /* GoogleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F176D61CD909D100F5026A /* GoogleAccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		20F176CB1CD8913800F5026A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F176CE1CD8913800F5026A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20F176D01CD8913800F5026A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F176D61CD909D100F5026A /* GoogleAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				20F176C41CD8913800F5026A /* AppDelegate.swift */,
 				20F176C61CD8913800F5026A /* DriveViewController.swift */,
+				20F176D61CD909D100F5026A /* GoogleAccountView.swift */,
 				20F176C81CD8913800F5026A /* Main.storyboard */,
 				20F176CB1CD8913800F5026A /* Assets.xcassets */,
 				20F176CD1CD8913800F5026A /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F176C71CD8913800F5026A /* DriveViewController.swift in Sources */,
+				20F176D71CD909D100F5026A /* GoogleAccountView.swift in Sources */,
 				20F176C51CD8913800F5026A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
