@@ -42,6 +42,7 @@ class GoogleDriveDataSource: NSObject, UITableViewDataSource {
     }
   }
 
+  // NOTE: See the Note in the README about enabling Google Drive APIs for your application.
   func requestGoogleDrivePermissions() {
     let signIn = GIDSignIn.sharedInstance()
     let driveScope = kGTLAuthScopeDriveMetadataReadonly
